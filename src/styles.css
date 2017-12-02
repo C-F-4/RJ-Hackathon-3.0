@@ -142,7 +142,7 @@ input::-webkit-input-placeholder {
 }
 
 .separator img {
-  height: 13em;
+  height: 16em;
   position: relative;
   z-index: -1;
   top: -80px;
@@ -292,21 +292,23 @@ input::-webkit-input-placeholder {
 }
 
 .separatorGallery {
-  height: 310px;
-}
-.separatorContentGallery{
-margin-top: 80px;   
+  height: 230px;
 }
 
-.separatorGallery img{
+.separatorContentGallery {
+  margin-top: 80px;
+  font-size: 1.7em;
+}
+
+.separatorGallery img {
   top: -15px;
 }
 
-.galleryWrapper{
+.galleryWrapper {
   padding: 10px;
 }
 
-.cardGallery{
+.cardGallery {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   height: 350px;
@@ -315,10 +317,9 @@ margin-top: 80px;
   background-size: cover;
   position: relative;
   background-position: center;
-  
 }
 
-.descriptionBase{
+.descriptionBase {
   background: #fff;
   position: absolute;
   width: 100%;
@@ -445,10 +446,10 @@ margin-top: 80px;
 
   .separatorContentGallery {
       margin-top: 120px;
-      font-size: 3em;
+      font-size: 1.6em;
   }
 
   .separatorContent{
-      margin-top: 28px;
+      margin-top: 60px;
   }
 }
