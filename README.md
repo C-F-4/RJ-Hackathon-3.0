@@ -25,13 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
--[] Searching & Filtering + Nearby Hotspots & Other Places
--[] Trip Planner - Total Time Estimator
--[] 360 Views & Street Views
--[] Dynamic Websites & Catalog Listing & eBazaar Linking
--[] Nearest Tour Guides Hiring
--[] Buddying Trips
+-[ ] Searching & Filtering + Nearby Hotspots & Other Places
+-[ ] Trip Planner - Total Time Estimator
+-[ ] 360 Views & Street Views
+-[ ] Dynamic Websites & Catalog Listing & eBazaar Linking
+-[ ] Nearest Tour Guides Hiring
+-[ ] Buddying Trips
 
-Increase Consumerism, Tourism,
-Make Trips Planning Easier and Customisable
-Get Businesses Online
+UseCases:
+-[ ] Increase Consumerism, Tourism,
+-[ ] Make Trips Planning Easier and Customisable
+-[ ] Get Businesses Online
