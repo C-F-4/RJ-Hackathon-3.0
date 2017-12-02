@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Arkhip_font";
-  src: url(Arkhip_font.ttf) format("truetype");
+  src: url('assets/fonts/Arkhip_font.ttf') format("truetype");
 }
 
 body {
@@ -87,7 +87,7 @@ input::-webkit-input-placeholder {
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('9.jpg');
+  background-image: url('assets/images/9.jpg');
   background-position: center;
   padding-top: 13%;
   background-attachment: fixed;
@@ -138,6 +138,8 @@ input::-webkit-input-placeholder {
 
 .map-wrapper {
   position: relative;
+  height: 100vh;
+  width: 100vw;
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -175,7 +177,7 @@ input::-webkit-input-placeholder {
 .pic {
   height: 45px;
   width: 60px;
-  background: url('pic.jpg');
+  background: url('assets/images/pic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
