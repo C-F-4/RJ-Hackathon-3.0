@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { DataUtilsService } from './../utilities/data-utils.service';
 import { MapsLoaderService } from './../utilities/maps-loader.service';
 
@@ -20,6 +22,7 @@ export class StateLandingComponent implements OnInit {
 
   // load map with apiKey from data.js
   constructor(
+    private router: Router,
     private dataUtilsService: DataUtilsService
   ) {
     MapsLoaderService.load().then(
