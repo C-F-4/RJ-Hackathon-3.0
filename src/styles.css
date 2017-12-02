@@ -1,1 +1,240 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Arkhip_font";
+  src: url(Arkhip_font.ttf) format("truetype");
+}
+
+body {
+  font-family: "Arkhip_font", Helvetica, Arial;
+  font-size: 15px;
+}
+
+
+/* general scrollbar css */
+
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+input::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+
+.mB10 {
+  margin-bottom: 10px !important;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.pR10 {
+  padding-right: 10px !important;
+}
+
+.mapContentContainer {
+  width: 350px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header {
+  padding: 10px 20px;
+  background: #fefee3;
+  border-bottom: 5px solid #ff8503;
+  overflow: overlay;
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  height: 7.2em;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9;
+}
+
+.contentWrapper {
+  position: relative;
+  background: #ff8503;
+  height: 80vh;
+  overflow: hidden;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('9.jpg');
+  background-position: center;
+  padding-top: 13%;
+  background-attachment: fixed;
+}
+
+.contentWrapper span {
+  padding: 8px 30px;
+  background: rgba(255, 133, 3, 0.8);
+  font-size: 4em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1%;
+  letter-spacing: 5px;
+  display: inline-block;
+}
+
+.line2 {
+  font-size: 3.2em !important;
+}
+
+.separator {
+  /* background-color: #fefee3; */
+  height: 220px;
+}
+
+.separator img {
+  height: 20em;
+  position: relative;
+  z-index: -1;
+  top: -80px;
+  opacity: 0.1;
+}
+
+#map {
+  height: 95%;
+  width: 100%;
+}
+
+.mapContentWrapper {
+  margin: 4% 1.6%;
+  height: 100%;
+  color: rgb(160, 160, 160);
+  position: absolute;
+  left: -12px;
+  top: 25px;
+  width: 100%;
+}
+
+.map-wrapper {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.map-wrapper .card {
+  padding: 10px 15px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  /* width: 85%; */
+  overflow: overlay;
+}
+
+.mapContentWrapper input {
+  border: none;
+  outline: none;
+  color: #929292;
+  width: 100%
+}
+
+.pills {
+  padding: 5px 10px;
+  background: #727272;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.categories {
+  padding: 15px 20px !important;
+  font-size: 0.8em;
+  /* font-weight: 600; */
+  color: #e4e4e4;
+  letter-spacing: 1px;
+}
+
+.pic {
+  height: 45px;
+  width: 60px;
+  background: url('pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.searchResultWrapper {
+  overflow-y: scroll;
+  height: 350px;
+  /* width: 86%; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.searchResultWrapper .card {
+  width: 100%;
+}
+
+
+/* width */
+
+.searchResultWrapper::-webkit-scrollbar {
+  width: 2px;
+  position: absolute;
+  right: 20px;
+}
+
+
+/* Track */
+
+.searchResultWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* Handle */
+
+.searchResultWrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.searchRightButton {
+  position: absolute;
+  right: 25px;
+  width: 43px !important;
+  top: 0;
+  height: 42px;
+}
+
+.footer {
+  padding: 50px;
+  color: #ccc;
+  border-top: 5px solid #ff8503;
+}
+
+.footer span {
+  color: #727272;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 370px) {
+  .footer {
+    background: red;
+  }
+}
