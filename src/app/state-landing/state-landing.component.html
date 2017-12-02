@@ -13,7 +13,7 @@
     <!-- <p>virtual tours</p> -->
     <div class="separatorContent">
       <p>Lets explore the awe inspiring views of Rajsthan in 360</p>
-      <button class="pinkBtn">View Gallery</button>
+      <button class="pinkBtn" routerLink="['GalleryView']">View Gallery</button>
     </div>
   </div>
   <div class="row map-wrapper">
@@ -26,7 +26,7 @@
       <div class="mapContentContainer">
         <span class="mapClose">x</span>
         <div class="card mB10 search">
-          <input placeholder="Search">
+          <input placeholder="Search" type="text" (change)="updateSuggestions($event)">
           <span class="card searchRightButton">v</span>
         </div>
         <div class="card mB10 categories">
@@ -88,6 +88,5 @@
 
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw7Cp4lwRPz3_RL6OMb0PO8YhFxwmrAFE">
   </script> -->
-  <script src="https://use.fontawesome.com/f765dbafd0.js"></script>
 
 </div>

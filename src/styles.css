@@ -93,7 +93,9 @@ input::-webkit-input-placeholder {
   padding: 10px 35px;
   color: #fff;
   border: none;
-  font-size: 0.5em;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .contentWrapper {
@@ -145,6 +147,11 @@ input::-webkit-input-placeholder {
 #map {
   height: 95%;
   width: 100%;
+}
+
+/* Remove Google WaterMarks, Logogs */
+.map-wrapper div#map a, .map-wrapper div#map a img {
+  display: none !important;
 }
 
 .mapContentWrapper {
@@ -268,7 +275,7 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 0;
   padding: 10px;
-  background: #fff;
+  background:#fff;
   position: absolute;
   top: 0;
   padding: 15px 30px;
@@ -277,105 +284,147 @@ input::-webkit-input-placeholder {
   display: none !important;
 }
 
+.separatorGallery {
+  height: 310px;
+}
+.separatorContentGallery{
+margin-top: 80px;   
+}
+
+.separatorGallery img{
+  top: -15px;
+}
+
+.galleryWrapper{
+  padding: 10px;
+}
+
+.cardGallery{
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  height: 350px;
+  background: url('assets/images/pic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.descriptionBase{
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  color: #727272;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  border-top: 1px solid #e4e4e4;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .header {
-    padding: 4%;
-    border-bottom: 10px solid #ff8503;
+      padding: 4%;
+      border-bottom: 10px solid #ff8503;
   }
   .header img {
-    height: 15em;
+      height: 15em;
   }
   .contentWrapper {
-    height: 70vh;
-    padding-top: 50%;
+      height: 70vh;
+      padding-top: 50%;
   }
   .contentWrapper span {
-    padding: 30px 45px;
-    display: block;
-    font-size: 8em;
+      padding: 30px 45px;
+      display: block;
+      font-size: 8em;
   }
   .line2 {
-    font-size: 4em !important;
+      font-size: 4em !important;
   }
   .searchResultWrapper {
-    position: absolute;
-    width: 94%;
-    height: 850px;
+      position: absolute;
+      width: 94%;
+      height: 850px;
   }
   .mapContentContainer {
-    margin: 0 auto;
-    width: 97%;
-    margin-top: 80px;
+      margin: 0 auto;
+      width: 97%;
+      margin-top: 80px;
   }
   .mapContentWrapper {
-    font-size: 3em;
-    left: 0;
-    background: #f9f9f9;
-    top: 0;
-    /* search hidden */
-    display: none;
+      font-size: 3em;
+      left: 0;
+      background: #f9f9f9;
+      top: 0;
+      /* search hidden */
+      display: none;
   }
   #map {
-    height: 80%;
+      height: 80%;
   }
   .mobileWrap {
-    display: block;
+      display: block;
   }
   .pic {
-    height: 140px;
-    width: 170px;
+      height: 140px;
+      width: 170px;
   }
   .searchResultWrapper-mobile {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    bottom: 0;
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      bottom: 0;
   }
   .searchRightButton {
-    top: 119px;
-    height: 110px;
-    width: 110px !important;
+      top: 119px;
+      height: 110px;
+      width: 110px !important;
   }
   .pills {
-    padding: 1% 4%;
-    margin-bottom: 20px !important;
+      padding: 1% 4%;
+      margin-bottom: 20px !important;
   }
   .footer {
-    font-size: 2.5em;
-    border-top: 10px solid #ff8503;
+      font-size: 2.5em;
+      border-top: 10px solid #ff8503;
   }
   .mapClose {
-    display: block;
-    font-size: 1.7em;
-    position: absolute;
-    top: 0;
-    right: 25px;
+      display: block;
+      font-size: 1.7em;
+      position: absolute;
+      top: 0;
+      right: 25px;
   }
   .mapClose:hover {
-    cursor: pointer;
+      cursor: pointer;
   }
   .search {
-    margin-bottom: 20px !important;
+      margin-bottom: 20px !important;
   }
   .categories {
-    margin-bottom: 20px !important;
-    padding: 30px !important;
-    padding-bottom: 15px !important;
+      margin-bottom: 20px !important;
+      padding: 30px !important;
+      padding-bottom: 15px !important;
   }
   .map-wrapper .card {
-    padding: 20px 40px;
+      padding: 20px 40px;
   }
   .pinkBtn {
-    background: #ff016e;
-    padding: 20px 50px;
-    color: #fff;
-    border: none;
-    font-size: 1em;
+      background: #ff016e;
+      padding: 20px 50px;
+      color: #fff;
+      border: none;
+      font-size: 1em;
   }
-  .separator {
-    height: 320px;
+
+  .separator{
+      height: 320px;
   }
-  .hamburger {
-    display: block !important;
+  .hamburger{
+      display: block !important;
+  }
+
+  .separatorContentGallery {
+      margin-top: 120px;
+      font-size: 3em;
   }
 }

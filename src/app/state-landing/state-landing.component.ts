@@ -16,8 +16,28 @@ export class StateLandingComponent implements OnInit {
   private placesInListing;
   private isMapLoaded = false;
 
+  private searchKey = '';
+
+  // load map with apiKey from data.js
+  constructor(
+    private dataUtilsService: DataUtilsService
+  ) {
+    MapsLoaderService.load().then(
+      res => {
+        this.isMapLoaded = true;
+        if (typeof google !== 'undefined') {
+          this.initMap();
+        }
+      }
+    );
+  }
+
+  ngOnInit() {
+  }
+
   // Initialize Google Maps
   initMap() {
+    // Defaults are center of the Country Capital
     let centerCoordinates = { lat: 28.7041, lng: 77.1025 };
     let mapProp = {
       center: new google.maps.LatLng(centerCoordinates),
@@ -67,7 +87,8 @@ export class StateLandingComponent implements OnInit {
           that.addMarkerAt(that.map, currentPosition, {
             'message': that.dataUtilsService['textMessages'].location_found.message,
             'event': 'mouseover'
-          }, 'assets/images/icons/current-location-marker.svg');
+          }, 'assets/images/icons/current-location-marker.svg',
+          that);
           that.searchHotspots(that.map, currentPosition);
         },
         () => {
@@ -87,19 +108,19 @@ export class StateLandingComponent implements OnInit {
   geocodeLatLng() { }
 
   // Show popup about the detected location and number of nearby popular joints found
-  addMarkerAt(map, coordinates, details = {}, icon) {
+  addMarkerAt(map, coordinates, details = {}, icon, that) {
     let newMarker = new google.maps.Marker({
       position: coordinates,
       animation: google.maps.Animation.DROP,
       icon: icon,
       map: map
     });
-    if (!this.dataUtilsService.isEmpty(details)) {
+    if (!that.dataUtilsService.isEmpty(details)) {
       newMarker['infoWindow'] = new google.maps.InfoWindow({
         content: details['message']
       });
       google.maps.event.addListener(newMarker, details['event'], () => {
-        this['infoWindow'].open(map, this);
+        that['infoWindow'].open(map, that);
       });
     }
   }
@@ -111,6 +132,7 @@ export class StateLandingComponent implements OnInit {
       radius: '500',
       type: ['restaurant']
     };
+    let __this = this;
     placeService.nearbySearch(request, (results, status) => {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (let i = 0; i < results.length; i++) {
@@ -124,7 +146,7 @@ export class StateLandingComponent implements OnInit {
               'message': 'Name: ' + results[i].name + '<br/> Rating: ' + results[i].rating,
               'event': 'click'
             };
-            this.addMarkerAt(this.map, coordinates, details, undefined);
+            this.addMarkerAt(this.map, coordinates, details, undefined, __this);
           }
         }
       }
@@ -134,21 +156,7 @@ export class StateLandingComponent implements OnInit {
   // slide in the right navbar and pop out markers on popular 5star joints
   // On click of any of these markers, fetch details and load into the popup
 
-  // load map with apiKey from data.js
-  constructor(
-    private dataUtilsService: DataUtilsService
-  ) {
-    MapsLoaderService.load().then(
-      res => {
-        this.isMapLoaded = true;
-        if (typeof google !== 'undefined') {
-          this.initMap();
-        }
-      }
-    );
-  }
-
-  ngOnInit() {
+  updateSuggestions(event: any) {
   }
 
 }
