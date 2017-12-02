@@ -12,97 +12,18 @@
   </div>
   <div class="galleryWrapper">
     <div class="row m0">
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
+      <ng-container *ngFor="let monument of monumentArray">
+        <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
+          <a (click)="openPano(monument['panoUrl'])">
+            <div class="cardGallery">
+              <div class="descriptionBase">
+                <p class="nameOfMonument">{{monument['name']}}</p>
+                <button class="pinkBtn">View in 360</button>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-3 mB10 text-center">
-        <div class="cardGallery">
-          <div class="descriptionBase">
-            <p class="nameOfMonument">Saheli ki Bari</p>
-            <button class="pinkBtn">View in 360</button>
-          </div>
-        </div>
-      </div>
-
-      
+      </ng-container>
     </div>
   </div>
   <div class="footer text-center">

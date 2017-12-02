@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StateLandingComponent } from './state-landing/state-landing.component';
 import { GalleryViewComponent } from './gallery-view/gallery-view.component';
+import { FullVrViewComponent } from './full-vr-view/full-vr-view.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'gallery-view',
     component: GalleryViewComponent
+  },
+  {
+    path: 'full-vr-view',
+    component: FullVrViewComponent
   },
   {
     path: '**',

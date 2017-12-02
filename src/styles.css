@@ -43,7 +43,9 @@ input::-webkit-input-placeholder {
 .m0 {
   margin: 0 !important;
 }
-
+.p0{
+  padding: 0 !important;
+}
 .pR10 {
   padding-right: 10px !important;
 }
@@ -154,6 +156,8 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 
+
+
 /* Remove Google WaterMarks, Logogs */
 .map-wrapper div#map a, .map-wrapper div#map a img {
   display: none !important;
@@ -195,7 +199,7 @@ input::-webkit-input-placeholder {
 
 .pills {
   padding: 5px 10px;
-  background: #727272;
+  background: #a9a9a9;
   border-radius: 50px;
   margin-bottom: 5px;
   display: inline-block;
@@ -204,13 +208,13 @@ input::-webkit-input-placeholder {
 .categories {
   padding: 10px 15px 5px  !important;
   font-size: 0.75em;
-  /* font-weight: 600; */
-  color: #e4e4e4;
+  font-weight: 600;
+  color: #fff;
   letter-spacing: 1px;
 }
 
 .pic {
-  height: 45px;
+  height: 60px;
   width: 60px;
   background: url('assets/images/pic.jpg');
   background-size: cover;
@@ -220,13 +224,35 @@ input::-webkit-input-placeholder {
 .searchResultWrapper {
   overflow-y: scroll;
   height: 380px;
+  background: #fff;
   /* width: 86%; */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+.searchResultWrapper p{
+  margin-bottom: 0;
+}
+
+.searchAddress{
+  font-size: 0.8em;
+  /* font-weight: 600; */
+}
+
+.searchName{
+  font-weight: 600;
+}
+
+.searchDistance{
+  font-weight: 600;
 }
 
 .searchResultWrapper .card {
   width: 100%;
 }
+/* 
+#distance{
+  font-weight: 600;
+  font-size: 0.8em;
+} */
 
 
 /* width */
@@ -416,6 +442,8 @@ input::-webkit-input-placeholder {
       padding: 15px !important;
       padding-bottom: 5px !important;
   }
+
+
   .map-wrapper .card {
       padding: 5px 20px;
   }
@@ -444,12 +472,17 @@ input::-webkit-input-placeholder {
       left: 15px;
   }
 
-  .separatorContentGallery {
-      margin-top: 120px;
-      font-size: 1.6em;
-  }
-
   .separatorContent{
-      margin-top: 60px;
+      margin-top: 30px;
   }
+ 
+  .separatorContentGallery {
+    margin-top: 70px;
+    font-size: 1.6em;
+}
+
+}
+
+.color1{
+  background: rgb(255, 133, 3);
 }
