@@ -63,6 +63,10 @@ input::-webkit-input-placeholder {
   overflow: overlay;
 }
 
+.header span{
+  font-size: 0.9em;
+}
+
 .header img {
   position: absolute;
   top: 0;
@@ -82,10 +86,11 @@ input::-webkit-input-placeholder {
   bottom: 0;
   margin: auto;
   z-index: 9;
-  margin-top: 60px;
+  margin-top: 35px;
   color: #8e8e8e;
   font-weight: 600;
-  font-size: 2.2em;
+  font-size: 1.2em;
+  letter-spacing: 3px;
 }
 
 .pinkBtn {
@@ -127,17 +132,17 @@ input::-webkit-input-placeholder {
 }
 
 .line2 {
-  font-size: 3.2em !important;
+  font-size: 2.6em !important;
 }
 
 .separator {
   /* background-color: #fefee3; */
-  height: 220px;
+  height: 160px;
   position: relative;
 }
 
 .separator img {
-  height: 20em;
+  height: 13em;
   position: relative;
   z-index: -1;
   top: -80px;
@@ -145,7 +150,7 @@ input::-webkit-input-placeholder {
 }
 
 #map {
-  height: 95%;
+  height: 100%;
   width: 100%;
 }
 
@@ -155,19 +160,21 @@ input::-webkit-input-placeholder {
 }
 
 .mapContentWrapper {
-  padding: 4% 1.6%;
+  padding: 0;
   height: 100%;
   color: rgb(160, 160, 160);
   position: absolute;
-  left: -12px;
+  left: 30px;
   top: 25px;
   /* width: 100%; */
+  /* margin-top: 30px; */
 }
 
 .map-wrapper {
   position: relative;
   height: 100vh;
   width: 100vw;
+  /* left: 15px; */
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -195,8 +202,8 @@ input::-webkit-input-placeholder {
 }
 
 .categories {
-  padding: 15px 20px !important;
-  font-size: 0.8em;
+  padding: 10px 15px 5px  !important;
+  font-size: 0.75em;
   /* font-weight: 600; */
   color: #e4e4e4;
   letter-spacing: 1px;
@@ -212,7 +219,7 @@ input::-webkit-input-placeholder {
 
 .searchResultWrapper {
   overflow-y: scroll;
-  height: 350px;
+  height: 380px;
   /* width: 86%; */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
 }
@@ -246,7 +253,7 @@ input::-webkit-input-placeholder {
 
 .searchRightButton {
   position: absolute;
-  right: 25px;
+  right: 0px;
   width: 43px !important;
   top: 0;
   height: 42px;
@@ -278,7 +285,7 @@ input::-webkit-input-placeholder {
   background:#fff;
   position: absolute;
   top: 0;
-  padding: 15px 30px;
+  padding: 15px 20px;
   background: #fff;
   color: #727272;
   display: none !important;
@@ -307,6 +314,8 @@ margin-top: 80px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: center;
+  
 }
 
 .descriptionBase{
@@ -323,50 +332,50 @@ margin-top: 80px;
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .header {
       padding: 4%;
-      border-bottom: 10px solid #ff8503;
+      border-bottom: 5px solid #ff8503;
   }
   .header img {
-      height: 15em;
+      height: 6em;
   }
   .contentWrapper {
       height: 70vh;
-      padding-top: 50%;
+      padding-top: 48%;
   }
   .contentWrapper span {
-      padding: 30px 45px;
+      padding: 10px 40px;
       display: block;
-      font-size: 8em;
+      font-size: 2em;
   }
   .line2 {
-      font-size: 4em !important;
+      font-size: 1.5em !important;
   }
   .searchResultWrapper {
       position: absolute;
-      width: 94%;
-      height: 850px;
+      width: 97%;
+      height: 300px;
+      font-size: 0.9em;
   }
   .mapContentContainer {
       margin: 0 auto;
       width: 97%;
-      margin-top: 80px;
+      margin-top: 35px;
   }
   .mapContentWrapper {
-      font-size: 3em;
+      font-size: 1.3em;
       left: 0;
       background: #f9f9f9;
       top: 0;
       /* search hidden */
       display: none;
+      margin-top: -1px;
   }
-  #map {
-      height: 80%;
-  }
+
   .mobileWrap {
       display: block;
   }
   .pic {
-      height: 140px;
-      width: 170px;
+      height: 70px;
+      width: 80px;
   }
   .searchResultWrapper-mobile {
       position: absolute;
@@ -375,56 +384,71 @@ margin-top: 80px;
       bottom: 0;
   }
   .searchRightButton {
-      top: 119px;
-      height: 110px;
-      width: 110px !important;
+      top: 35px;
+      height: 39px;
+      width: 50px !important;
   }
   .pills {
       padding: 1% 4%;
-      margin-bottom: 20px !important;
+      margin-bottom: 10px !important;
   }
   .footer {
-      font-size: 2.5em;
-      border-top: 10px solid #ff8503;
+      font-size: 1em;
+      padding: 16px;
+      border-top: 5px solid #ff8503;
   }
   .mapClose {
       display: block;
-      font-size: 1.7em;
+      font-size: 1.2em;
       position: absolute;
       top: 0;
-      right: 25px;
+      right: 10px;
   }
   .mapClose:hover {
       cursor: pointer;
   }
   .search {
-      margin-bottom: 20px !important;
+      margin-bottom: 10px !important;
   }
   .categories {
-      margin-bottom: 20px !important;
-      padding: 30px !important;
-      padding-bottom: 15px !important;
+      margin-bottom: 10px !important;
+      padding: 15px !important;
+      padding-bottom: 5px !important;
   }
   .map-wrapper .card {
-      padding: 20px 40px;
+      padding: 5px 20px;
+  }
+  .map-wrapper{
+    width: 104vw;
   }
   .pinkBtn {
       background: #ff016e;
-      padding: 20px 50px;
+      padding: 15px 35px;
       color: #fff;
       border: none;
-      font-size: 1em;
+      font-size: 0.8em;
+      margin-top: 15px;
   }
 
   .separator{
-      height: 320px;
+      height: 220px;
   }
+
+  .separator img{
+      height: 11em;
+  }
+
   .hamburger{
       display: block !important;
+      left: 15px;
   }
 
   .separatorContentGallery {
       margin-top: 120px;
       font-size: 3em;
+  }
+
+  .separatorContent{
+      margin-top: 28px;
   }
 }
