@@ -116,7 +116,8 @@ export class StateLandingComponent implements OnInit {
       position: coordinates,
       animation: google.maps.Animation.DROP,
       icon: icon,
-      map: map
+      map: map,
+      optimized: false
     });
     if (!that.dataUtilsService.isEmpty(details)) {
       newMarker['infoWindow'] = new google.maps.InfoWindow({
