@@ -22,7 +22,7 @@ export class StateLandingComponent implements OnInit {
 
   // load map with apiKey from data.js
   constructor(
-    private router: Router,
+    public router: Router,
     private dataUtilsService: DataUtilsService
   ) {
     MapsLoaderService.load().then(

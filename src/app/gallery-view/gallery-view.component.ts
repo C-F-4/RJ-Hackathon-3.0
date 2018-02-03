@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./gallery-view.component.css']
 })
 export class GalleryViewComponent implements OnInit {
-  private monumentArray = new Array();
+  public monumentArray = new Array();
 
   constructor(
     private router: Router,

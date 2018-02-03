@@ -13,7 +13,7 @@ declare const google: any;
 export class FullVrViewComponent implements OnInit {
   isMapLoaded: boolean;
   private map;
-  private _url;
+  public _url;
 
   constructor(
     public sanitizer:DomSanitizer,
